@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('pull-from-github-build') {
             steps {
-                echo "Running for branch 'testrun'"
+                echo "Running for branch 'Master'"
                 bat "npm install"
             }
         }
