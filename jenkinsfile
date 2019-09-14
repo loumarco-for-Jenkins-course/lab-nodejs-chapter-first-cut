@@ -12,9 +12,6 @@ pipeline {
             }
         }
         stage('execute-unit-tests') {
-            when {
-                branch 'testrun'  
-            }
             steps{
                bat "npm test"
             }
