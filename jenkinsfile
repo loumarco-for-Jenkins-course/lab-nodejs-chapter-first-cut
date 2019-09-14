@@ -1,4 +1,5 @@
 // Pipeline lab end of chapter 4
+// Will made several additions
 pipeline {
     agent any
 	tools {nodejs "node12"}
