@@ -1,0 +1,19 @@
+// Pipeline lab end of chapter 4
+pipeline {
+    agent any
+	tools {nodejs "node12"}
+    stages {
+        stage('pull-from-github-build') {
+            steps {
+                bat "npm install"
+            }
+        }
+        stage('execute-unit-tests') {
+            steps{
+               bat "npm test"
+            }
+        }
+        
+    }
+  
+}
