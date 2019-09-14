@@ -5,17 +5,9 @@ pipeline {
 	tools {nodejs "node12"}
     stages {
         stage('pull-from-github-build') {
-            when {
-                branch 'testrun'
-            }
             steps {
                 echo "Running for branch 'testrun'"
                 bat "npm install"
-            }
-        }
-        stage('execute-unit-tests') {
-            steps{
-               bat "npm test"  
             }
         }
         
