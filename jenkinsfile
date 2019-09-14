@@ -13,6 +13,7 @@ pipeline {
         }
         stage('execute-unit-tests') {
             steps{
+               echo "Running tests for branch 'testrun'"
                bat "npm test"
             }
         }
