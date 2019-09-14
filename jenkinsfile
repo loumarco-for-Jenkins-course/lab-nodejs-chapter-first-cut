@@ -15,7 +15,7 @@ pipeline {
         }
         stage('execute-unit-tests') {
             steps{
-               bat "npm test"
+               bat "npm test"  
             }
         }
         
