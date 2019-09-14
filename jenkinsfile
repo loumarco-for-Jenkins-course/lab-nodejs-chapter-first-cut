@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('pull-from-github-build') {
             when {
-                branch 'testrun'
+                branch 'testrun'  
             }
             steps {
                 echo "Running for branch 'testrun'"
